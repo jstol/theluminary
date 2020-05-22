@@ -40,12 +40,4 @@ $(function() {
 	  }
 	}, 1000);
 
-	// Update the bg every 0.1 seconds
-	cnt = 0;
-	setInterval(function() {
-		$('.content').removeClass("grain-" + cnt)
-		cnt = (cnt + 1) % 3;
-		$('.content').addClass("grain-" + cnt)
-	}, 100)
-
 });

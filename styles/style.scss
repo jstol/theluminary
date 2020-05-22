@@ -52,32 +52,6 @@ h1.sectionTitle {
   }
 }
 
-@mixin grain {
-  content: "";
-  opacity: 0.60;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-}
-
-.content.grain-0::after {
-  @include grain;
-  background: url(../Images/noise/1.png);
-}
-
-.content.grain-1::after {
-  @include grain;
-  background: url(../Images/noise/2.png);
-}
-
-.content.grain-2::after {
-  @include grain;
-  background: url(../Images/noise/3.png);
-}
-
 html, body {
   height: 100%;
 }
@@ -92,6 +66,18 @@ html, body {
   text-align: center;
   z-index: 1000;
   overflow-x: hidden;
+
+  &.grain::after {
+    content: "";
+    background: url(../Images/noise.gif);
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
 
   video {
     max-width: 100vw;
