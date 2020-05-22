@@ -52,6 +52,79 @@ h1.sectionTitle {
   }
 }
 
+@mixin grain {
+  content: "";
+  opacity: 0.60;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.content.grain-0::after {
+  @include grain;
+  background: url(../Images/noise/1.png);
+}
+
+.content.grain-1::after {
+  @include grain;
+  background: url(../Images/noise/2.png);
+}
+
+.content.grain-2::after {
+  @include grain;
+  background: url(../Images/noise/3.png);
+}
+
+.content {
+  height: 100vh;
+  padding: 10px;
+  margin: 0 auto;
+  overflow-y: hidden;
+  // background-color: #1f1f1f;
+  background: #1f1f1f;
+  position: relative;
+  text-align: center;
+  z-index: 1000;
+
+  video {
+    margin: 10px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    overflow-y: hidden;
+  }
+
+  #countdown-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    #countdown {
+      padding: 10px 20px;
+      opacity: 0.6;
+      font-size: 1em;
+      font-variant-caps: small-caps;
+      width: fit-content;
+      background-color: white;
+      color: black;
+      mix-blend-mode: color-dodge;
+    }
+
+    #countdown:hover {
+      opacity: 1.0;
+    }
+  }
+}
+
 @import "partials/setup";
 @import "partials/header";
 @import "partials/footer";
