@@ -1,9 +1,9 @@
 header {
-	background: url(../Images/FlowStateEP.jpg);
+	background: url(../Images/Apparition_notext.png);
 	min-height: 100vmin;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center center;
+	background-position: center top;
 }
 
 .menu {
@@ -29,7 +29,7 @@ header {
 }
 
 nav {
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0));
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.3));
 	padding: 10px 0;
 	display: flex;
 	align-items: center;
