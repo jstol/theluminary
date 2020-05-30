@@ -1,5 +1,5 @@
 # The Luminary - website
-Website for The Luminary - http://theluminary.band
+Website for The Luminary - https://theluminary.band
 
 ## Developing Locally
 This is a [GitHub Pages](https://pages.github.com/) site that uses [Jekyll](https://jekyllrb.com/).
