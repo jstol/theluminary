@@ -3,12 +3,16 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top;
-	background: url(../Images/FlowStateEP-Blur.jpg);
+	background: url(../Images/Apparition_blurred.png);
 	padding-bottom: 0;
 }
 
-.music #flowState {
+.music #apparition {
 	// Use default image from above
+}
+
+.music #flowState {
+	background: url(../Images/FlowStateEP-Blur.jpg);
 }
 
 .music #collectiveUnconscious {
