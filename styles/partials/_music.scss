@@ -1,33 +1,41 @@
 .music {
 	min-height: 100vh;
+	background-image: url(../Images/Lost_From_View_blurred.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100% auto;
 	background-position: top;
-	background: url(../Images/Apparition_blurred.png);
 	padding-bottom: 0;
 }
 
-.music #apparition {
+.music #lostFromView {
 	// Use default image from above
 }
 
+.music #apparition {
+	background-image: url(../Images/Apparition_blurred.png);
+}
+
 .music #flowState {
-	background: url(../Images/FlowStateEP-Blur.jpg);
+	background-image: url(../Images/FlowStateEP-Blur.jpg);
 }
 
 .music #collectiveUnconscious {
-	background: url(../Images/CollectiveUnconsciousEP-Blur.jpg);
-	background-position: left;
+	background-image: url(../Images/CollectiveUnconsciousEP-Blur.jpg);
+	background-position: top;
 }
 
 .music #cycles {
-	background: url(../Images/Cycles-Blur.jpg);
-	background-position: right;
+	background-image: url(../Images/Cycles-Blur.jpg);
+	background-position: left;
 }
 
 .musicWrapper {
 	width: 100%;
 	margin: 0 auto;
+
+	> * {
+		background-size: 100% auto;
+	}
 }
 
 .musicContent {
