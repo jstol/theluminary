@@ -9,6 +9,10 @@ footer {
   }
 
   .social {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+    justify-content: center;
     margin-top: 20px;
     a {
       color: white;
